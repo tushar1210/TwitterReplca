@@ -16,11 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
         //Ignore the story board
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: homeController)
+//        let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
+//
+//        window?.rootViewController = UINavigationController(rootViewController: homeController)
+       
+        window?.rootViewController = UINavigationController(rootViewController: HomeDatasourceController())
         return true
     }
 
