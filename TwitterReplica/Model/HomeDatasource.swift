@@ -11,7 +11,7 @@ import LBTAComponents
 
 class HomeDatasource:Datasource {
     
-    let words = ["User1","User2","User3","User4"]
+    let words = ["Tushar Singh","Tushar Singh","Tushar Singh","Tushar Singh"]
     override func item(_ indexPath: IndexPath) -> Any? {
         return words[indexPath.item]
     }
